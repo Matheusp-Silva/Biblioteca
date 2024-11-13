@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block 'titulo' %} Ver livro {% endblock%}
+
+{% block 'conteudo' %}
+    
+    <div style="text-align: center" class="container">
+        <h1>{{livro.nome}}</h1>
+        <h1>{{livro.autor}}</h1>
+        <h1>{{livro.coautor}}</h1>
+        <h1>{{livro.categoria}}</h1>
+        <h1>{{livro.data_cadastro}}</h1>
+        <h1>{{livro.emprestado}}</h1>
+        <h1>{{livro.data_emprestimo}}</h1>
+        <h1>{{livro.data_devolucao}}</h1>
+        
+        <button>Histórico de empréstimo</button>
+        
+    </div>
+    
+
+{% endblock%}
